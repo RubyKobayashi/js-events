@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Events example</title>
+  </head>
+
+  <body>
+    <div id="greeting"></div>
+    <button type="button" id="greeting-button">Say Hi</a>
+
+    <script>
+      listenForButtonClick();
+
+      function listenForButtonClick() {
+        document.getElementById("greeting-button")
+          .addEventListener("click", sayHello);
+      };
+
+      function sayHello() {
+        document
+          .getElementById("greeting").innerHTML = "Oh hai!";
+      };
+    </script>
+  </body>
+</html>
